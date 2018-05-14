@@ -44,10 +44,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
      
 
-     
-
-
-
 // 2) to handle adding a post
 
   app.post('/posts',function (req,res){
