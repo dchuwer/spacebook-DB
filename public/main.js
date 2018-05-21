@@ -1,6 +1,6 @@
 import PostsRepository from './posts-repository.js';
 import PostsRenderer from './posts-renderer.js';
-import EventsHandler from './events-handler.js'; 
+import EventsHandler from './events-handler.js';
 
 let postsRepository = new PostsRepository();
 let postsRenderer = new PostsRenderer();
@@ -13,6 +13,7 @@ eventsHandler.registerAddComment();
 eventsHandler.registerRemoveComment();
 
 var getPosts = postsRepository.getPosts();
-getPosts.then( () => {
-    
-    postsRenderer.renderPosts(postsRepository.posts)});
+getPosts.then(() => {
+
+   postsRenderer.renderPosts(postsRepository.posts)
+});
